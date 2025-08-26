@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 180px;
+  background-color: #506250;
+  padding: 20px 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-list{
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.menu-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.menu-button.active {
+  background-color: #fff;
+  color: #506250;
+  font-weight: bold;
+  cursor: default;
+  opacity: 2;
+}
+
+
+ /* src/components/visitor/visitor.css */
+
+.visitor-log-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #eef5e8;
+}
+
+.visitor-log {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.visitor-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visitor-log h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.visitor-log input,
+.visitor-log textarea {
+  width: 300px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.visitor-log textarea {
+  height: 60px;
+  resize: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.check-in,
+.check-out {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.check-in {
+  background-color: #ee6f57;
+  color: white;
+}
+
+.check-out {
+  background-color: #edc988;
+  color: #333;
+}
+
+.calendar-image img {
+  /* max-width: 400px; */
+  height: 400px;
+  width: 800px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-image img :hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Banner Section */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.banner-container img {
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

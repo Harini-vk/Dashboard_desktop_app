@@ -1,0 +1,223 @@
+/* src/components/donation/donation.css */
+
+.donation-wrapper {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.donation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-button,
+.pdf-button {
+  background-color: #7ca982;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* .donation-add-btn,
+.donation-download-btn {
+
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+} */
+
+.donation-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.donation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.donation-list h2 {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: top;
+  
+}
+
+.donation-card {
+  background-color: #d7eed2;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 18px;
+  width: 650px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 300px;
+  cursor: pointer;
+  padding-left: 60px;              
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.donation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  /* background-color: #f9f9ff; subtle background change */
+}
+
+.donation-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2d3e30;
+}
+
+
+/* ROW LAYOUT IN CARD */
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.card-row div {
+  width: 48%;
+  font-size: 15px;
+  line-height: 2;
+  word-break: break-word;
+}
+
+.card-row strong {
+  font-weight: 600;
+}
+
+.donation-form {
+  max-width: 500px;
+  margin: 40px auto;
+  width: 800px;
+  height: 550px;
+  background: #eef6ef;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.donation-form input,
+.donation-form textarea,
+.donation-form select {
+  display: block;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.donation-buttons {
+  display: flex;
+  justify-content:center;
+  gap: 70px;
+  background-color: #5ca17d;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.donation-buttons button {
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.donation-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+.donation-buttons button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.donation-buttons button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+
+/* 
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+} */
+
+
+.password-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-inner {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.popup-inner input[type="password"] {
+  padding: 8px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.popup-inner button {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 6px 16px;
+  background-color: #292929;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

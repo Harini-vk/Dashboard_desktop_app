@@ -1,0 +1,156 @@
+/* File: src/components/resident/resident.css */
+
+.residents-wrapper {
+  flex: 1;
+  padding: 20px;
+  background-color: #efefef;
+}
+
+.residents-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Poppins'
+}
+
+.add-button,
+.pdf-button {
+  background-color: #a7a7a7;
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-button:hover,.pdf-button:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  background-color: #000000; /* subtle background change */
+}
+
+
+.resident-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 50px;
+}
+
+.resident-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  width: 160px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.resident-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  /* background-color: #f9f9ff; subtle background change */
+}
+
+.resident-card-img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.resident-form,
+.resident-detail {
+  padding: 20px;
+  background-color: #efefef;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.resident-form input[type="text"],
+.resident-form input[type="file"] {
+  width: 300px;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn,
+.back-btn {
+  background-color: #8f8f8f;
+  color: white;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 5px;
+  
+}
+
+.edit-btn,
+.delete-btn{
+  align-items: center;
+  background-color: #8f8f8f;
+  color: white;
+  padding: 6px 16px;
+  border: none;
+  margin: 5px;
+  margin-left: 25px;
+}
+
+.resident-detail-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  object-fit: cover;
+   display:flex
+}
+
+.password-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-inner {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.popup-inner input[type="password"] {
+  padding: 8px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.popup-inner button {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 6px 16px;
+  background-color: #292929;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
