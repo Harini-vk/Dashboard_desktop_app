@@ -18,4 +18,11 @@ In development mode, when you run npm start in React, a dev server is started on
 
 Sample Screenshots of Output:
 <img width="576" height="267" alt="image" src="https://github.com/user-attachments/assets/84520e0b-dbe9-4820-96e7-4864186d5c6a" />
-<img width="1600" height="838" alt="image" src="https://github.com/user-attachments/assets/ca4347a4-1703-4582-8c41-00d890a0221c" />
+<img width="576" height="267" alt="image" src="https://github.com/user-attachments/assets/ca4347a4-1703-4582-8c41-00d890a0221c" />
+<img width="576" height="267" alt="image" src="https://github.com/user-attachments/assets/56195a5d-0f58-4e14-9a5f-c2a44f07a1b9" />
+<img width="576" height="267" alt="image" src="https://github.com/user-attachments/assets/ee64d50c-c78c-4ae6-abc6-1073e9285476" />
+
+Password: 123
+
+
+
